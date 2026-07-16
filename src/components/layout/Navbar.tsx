@@ -30,7 +30,6 @@ export const Navbar = () => {
     ? 'bg-white/90 backdrop-blur-md shadow-md py-4 text-text'
     : 'bg-transparent py-6 text-white';
 
-  const logoTextClass = scrolled || !isHome ? 'text-primary' : 'text-white';
   const linkClass = (path: string) => {
     const isActive = location.pathname === path;
     if (scrolled || !isHome) {
