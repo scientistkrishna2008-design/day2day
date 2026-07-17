@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
 
 const stats = [
-  { value: '10+', label: 'Years of Experience' },
+  { value: '21+', label: 'Years of Experience' },
   { value: '500+', label: 'Projects Completed' },
   { value: '250+', label: 'Happy Clients' },
   { value: '150+', label: 'Professional Staff' },

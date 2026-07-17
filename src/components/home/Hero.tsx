@@ -64,7 +64,7 @@ export const Hero = () => {
             className="mt-12 pt-8 border-t border-gray-200 flex items-center gap-8"
           >
             <div className="flex flex-col">
-              <span className="text-3xl font-bold font-poppins text-secondary">10+</span>
+              <span className="text-3xl font-bold font-poppins text-secondary">21+</span>
               <span className="text-sm text-gray-500">Years Experience</span>
             </div>
             <div className="w-px h-12 bg-gray-200"></div>

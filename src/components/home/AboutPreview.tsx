@@ -23,7 +23,7 @@ export const AboutPreview = () => {
             />
             {/* Experience Badge */}
             <div className="absolute -bottom-6 -right-6 z-20 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 hidden sm:flex">
-              <div className="text-5xl font-poppins font-bold text-primary">10+</div>
+              <div className="text-5xl font-poppins font-bold text-primary">21+</div>
               <div className="text-sm font-medium text-gray-600 leading-tight">
                 Years of<br/>Excellence
               </div>
