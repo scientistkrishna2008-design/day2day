@@ -48,8 +48,11 @@ export const TrustBuilders = () => {
               <h2 className="text-3xl lg:text-4xl font-poppins font-bold text-white mb-6">
                 Why Choose Day 2 Day Services?
               </h2>
+              <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                Our long-standing presence in India has helped us gain an understanding of the market, which we believe has largely contributed towards the growth in our operations and profitability.
+              </p>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                We don't just maintain facilities; we elevate them. Our commitment to excellence, rigorous quality checks, and trained professionals ensure your workspace is always at its best.
+                Our diverse range of services, customer base across sectors, and the strength of our brand, have enabled us to strengthen our leading position.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
