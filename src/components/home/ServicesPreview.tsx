@@ -1,45 +1,9 @@
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Bug, Users, Building, Briefcase } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const services = [
-  {
-    id: 'housekeeping',
-    title: 'Housekeeping',
-    description: 'Professional cleaning services for corporate offices, hospitals, and industrial facilities.',
-    icon: Sparkles,
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600'
-  },
-  {
-    id: 'pest-control',
-    title: 'Pest Control',
-    description: 'Comprehensive pest management solutions to keep your premises safe and hygienic.',
-    icon: Bug,
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600'
-  },
-  {
-    id: 'manpower-supply',
-    title: 'Manpower Supply',
-    description: 'Reliable skilled and unskilled manpower for various industrial and corporate needs.',
-    icon: Users,
-    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=600'
-  },
-  {
-    id: 'guest-house',
-    title: 'Guest House Mgmt',
-    description: 'Complete management of corporate guest houses ensuring premium hospitality.',
-    icon: Building,
-    image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=600'
-  },
-  {
-    id: 'staffing',
-    title: 'Staffing Solutions',
-    description: 'End-to-end staffing and payroll solutions tailored to your business requirements.',
-    icon: Briefcase,
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=600'
-  }
-];
+import { servicesData as services } from '../../data/servicesData';
 
 export const ServicesPreview = () => {
   return (
@@ -88,7 +52,7 @@ export const ServicesPreview = () => {
                     {service.description}
                   </p>
                   <Link 
-                    to={`/services#${service.id}`}
+                    to={`/services/${service.slug}`}
                     className="inline-flex items-center gap-2 text-primary font-medium hover:text-accent transition-colors mt-auto"
                   >
                     Learn More <ArrowRight size={18} />
