@@ -10,6 +10,7 @@ import { Projects } from './pages/Projects';
 import { Gallery } from './pages/Gallery';
 import { Contact } from './pages/Contact';
 import { Preloader } from './components/ui/Preloader';
+import { ScrollToTop } from './components/utils/ScrollToTop';
 
 // Admin Imports
 import { AdminLayout } from './components/layout/AdminLayout';
@@ -27,6 +28,7 @@ function App() {
       {loading && <Preloader onComplete={() => setLoading(false)} />}
       <div style={{ opacity: loading ? 0 : 1, transition: 'opacity 0.5s ease-in' }}>
         <Router>
+          <ScrollToTop />
           <Routes>
           {/* Public Routes */}
           <Route path="/" element={<Layout />}>
