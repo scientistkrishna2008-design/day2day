@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, ArrowRight, Globe } from 'lucide-react';
+import { servicesData } from '../../data/servicesData';
 
 export const Footer = () => {
   return (
@@ -66,21 +67,16 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-poppins font-semibold mb-6">Our Services</h3>
             <ul className="space-y-4">
-              <li className="text-gray-300 flex items-center gap-2">
-                <ArrowRight size={16} className="text-accent" /> Housekeeping
-              </li>
-              <li className="text-gray-300 flex items-center gap-2">
-                <ArrowRight size={16} className="text-accent" /> Pest Control
-              </li>
-              <li className="text-gray-300 flex items-center gap-2">
-                <ArrowRight size={16} className="text-accent" /> Manpower Supply
-              </li>
-              <li className="text-gray-300 flex items-center gap-2">
-                <ArrowRight size={16} className="text-accent" /> Guest House Mgmt
-              </li>
-              <li className="text-gray-300 flex items-center gap-2">
-                <ArrowRight size={16} className="text-accent" /> Staffing Solutions
-              </li>
+              {servicesData.map((service) => (
+                <li key={service.id}>
+                  <Link 
+                    to={`/services/${service.slug}`} 
+                    className="text-gray-300 hover:text-accent transition-colors flex items-center gap-2"
+                  >
+                    <ArrowRight size={16} className="text-accent" /> {service.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
